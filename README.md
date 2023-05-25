@@ -14,7 +14,7 @@ There are several types of autoscaling:
 
 These autoscaling types can be combined or used independently depending on the specific needs and characteristics of the application or system being scaled. The choice of autoscaling strategy depends on factors such as the nature of the workload, the availability of resources, cost considerations, and the desired performance objectives.
 
-## Here auto scaling on the basis of Schedule
+## Scheduled Auto scaling
 
 Scheduled autoscaling is a feature provided by cloud computing platforms that allows you to automatically adjust the capacity of your resources based on predefined schedules. It enables you to scale your infrastructure up or down at specific times or days to meet changing workload demands and optimize resource utilization.
 
@@ -84,7 +84,7 @@ Here the modules concepts of terraform has been used.
         time_zone             = "Europe/Helsinki"
         //start_time            = "2023-05-25T01:15:00Z"
         //end_time              = "2023-05-25T01:20:00Z"
-        recurrence             = "00 12 * * 1-5"
+        recurrence             = "00 21 * * 1-5"
         autoscaling_group_name = aws_autoscaling_group.custom-autoscaling-group.name
         }
 
